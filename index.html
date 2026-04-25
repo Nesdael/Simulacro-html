@@ -9,17 +9,24 @@
 </head>
 
 <body>
-    <header class="barra-superior">
-        <img class="imagenlogo" src="assets/images/logo.png" alt="FESTIVAL JAPONES">
-        <nav>
-            <a href="#inicio">INICIO</a>
-            <a href="#eventos">EVENTOS</a>
-            <a href="#experiencias">EXPERIENCIAS</a>
-            <a href="#galeria">GALERIA</a>
-            <a href="#contaco">CONTACTO</a>
-            <a class="comprar-entradas" href="">COMPRAR ENTRADAS</a>
-        </nav>
-    </header>
+<header class="barra-superior">
+    <img class="imagenlogo" src="assets/images/logo.png" alt="FESTIVAL JAPONES">
+    <button class="hamburguesa" id="hamburguesa">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <nav id="nav-menu">
+        <ul>
+            <li><a href="#inicio">INICIO</a></li>
+            <li><a href="#eventos">EVENTOS</a></li>
+            <li><a href="#experiencias">EXPERIENCIAS</a></li>
+            <li><a href="#galeria">GALERIA</a></li>
+            <li><a href="#contaco">CONTACTO</a></li>
+            <li><a class="comprar-entradas" href="">COMPRAR ENTRADAS</a></li>
+        </ul>
+    </nav>
+</header>
 
     <main>
         <section id="inicio">
@@ -29,7 +36,7 @@
                 <a href="">CONOCE MAS</a>
             </div>
         </section>
-        <section class="fechas">
+        <section class="fechas" id="eventos">
             <h2>Proximas fechas</h2>
             <table>
                 <thead>
@@ -131,50 +138,42 @@
             <button type="button">VER MAS FOTOS</button>
         </section>
     </main>
-    <footer>
-        <div>
-            <div>
-                <img src="assets/images/logo.png" alt="FESTIVAL JAPONES">
-                <p>Vive la mejor experiencia gastronómica nocturna.</p>
-            </div>
-            <div>
-                <h3>ENLANCES</h3>
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#eventos">Eventos</a></li>
-                    <li><a href="#experiencias">Experiencias</a></li>
-                    <li><a href="#galeria">Galeria</a></li>
-                    <li><a href="#contaco">Contacto</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3>SIGUENOS</h3>
-                <a href="#">
-                    <img src="assets/icons/icons8-instagram.svg" alt="Ir al instragram del festival">
-                </a>
-                <a href="#">
-                    <img src="assets/icons/icons8-facebook.svg" alt="Ir al facebook del festival">
-                </a>
-                <a href="#">
-                    <img src="assets/icons/icons8-tiktok.svg" alt="Ir al tiktok del festival">
-                </a>
-                <a href="#">
-                    <img src="assets/icons/icons8-youtube.svg" alt="Ir al youtube del festival">
-                </a>
-            </div>
-            <div>
-                <h3>NEWSLETTER</h3>
-                <p></p>
-                <form>
-                    <input type="email" placeholder=" Tu correo electronico">
-                    <button type="submit">SUSCRIBETE</button>
-                </form>
-            </div>
-            <div>
-                <p>© 2026 Festival japones. Todos los derechos reservados.</p>
-            </div>
+    <footer id="contaco">
+    <div class="footer-grid">
+        <div class="footer-marca">
+            <img class="logo-foot" src="assets/images/logo.png" alt="FESTIVAL JAPONES">
+            <p>Vive la mejor experiencia gastronómica nocturna.</p>
         </div>
-    </footer>
+        <div class="footer-enlaces">
+            <h3>ENLACES</h3>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#eventos">Eventos</a></li>
+                <li><a href="#experiencias">Experiencias</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#contaco">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="footer-redes">
+            <h3>SÍGUENOS</h3>
+            <a href="#"><img src="assets/icons/icons8-instagram.svg" alt="Instagram"></a>
+            <a href="#"><img src="assets/icons/icons8-facebook.svg" alt="Facebook"></a>
+            <a href="#"><img src="assets/icons/icons8-tiktok.svg" alt="Tiktok"></a>
+            <a href="#"><img src="assets/icons/icons8-youtube.svg" alt="Youtube"></a>
+        </div>
+        <div class="footer-newsletter">
+            <h3>NEWSLETTER</h3>
+            <form>
+                <input type="email" placeholder="Tu correo electrónico">
+                <button type="submit">SUSCRÍBETE</button>
+            </form>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2026 Festival Japonés. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+<script src="/JS/script.js"></script>
 </body>
 
 </html>

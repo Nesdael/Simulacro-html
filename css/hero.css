@@ -1,0 +1,50 @@
+@import url('root.css');
+
+#inicio{
+    min-height: 100vh;
+    background: linear-gradient(to bottom, rgba(5, 6, 15, 0.4) 0%, rgba(11, 14, 42, 0.6) 100%), url(/assets/images/hero-fondo.png) no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+    padding-top: 90px;
+}
+
+.hero-section {
+    max-width: 640px;
+}
+
+.hero-section h1 {
+    font-family: var(--fuente-titulo);
+    margin-bottom: 20px;
+
+    color: var(--blanco);
+
+}
+
+.hero-section h1 span{
+    color: var(--dorado);
+}
+
+.hero-section p{
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: var(--gris);
+}
+
+.hero-section a{
+    display: inline-block;
+    margin-top: 30px;
+    background: var(--dorado);
+    padding: 14px 36px;
+    color: var(--negro);
+    font-family: var(--fuente-titulo);
+    font-size: 1.05rem;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    transition: background 0.2s, transform 0.15s;
+}
+
+.hero-section a:hover{
+    background: var(--dorado-claro);
+    transform: translateY(-2px);
+}

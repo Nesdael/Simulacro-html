@@ -1,0 +1,101 @@
+@import url('root.css');
+
+footer {
+    background: var(--negro);
+    border-top: 2px solid var(--dorado);
+    padding: 60px 5% 30px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    gap: 40px;
+}
+
+.footer-marca img {
+    height: 200px;
+    margin-bottom: 12px;
+}
+.footer-marca p {
+    color: var(--gris);
+    font-size: 0.88rem;
+}
+
+.footer-enlaces h3,
+.footer-redes h3,
+.footer-newsletter h3 {
+    font-family: var(--fuente-titulo);
+    letter-spacing: 2px;
+    font-size: 1rem;
+    color: var(--dorado);
+    margin-bottom: 16px;
+}
+
+.footer-enlaces ul li {
+    margin-bottom: 8px;
+}
+.footer-enlaces ul li a {
+    color: var(--gris);
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+.footer-enlaces ul li a:hover { 
+    color: var(--dorado); 
+}
+
+.footer-redes {
+    display: flex;
+    flex-direction: column;
+}
+.footer-redes a {
+    display: inline-block;
+}
+.footer-redes a img {
+    height: 32px;
+    transition: transform 0.2s;
+    margin: 4px 0;
+}
+.footer-redes a:hover img {
+    transform: translateY(-2px);
+}
+
+.footer-newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-newsletter input[type="email"] {
+    padding: 11px 14px;
+    border-radius: 4px;
+    border: 1px solid rgba(245, 197, 24, 0.3);
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--blanco);
+    font-family: var(--fuente-cuerpo);
+    font-size: 0.9rem;
+}
+.footer-newsletter input[type="email"]::placeholder {
+    color: var(--gris); 
+}
+.footer-newsletter button[type="submit"] {
+    padding: 11px;
+    background: var(--dorado);
+    color: var(--negro);
+    font-family: var(--fuente-titulo);
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.footer-newsletter button[type="submit"]:hover {
+    background: var(--dorado-claro); 
+}
+
+.footer-copyright {
+    grid-column: 1 / -1;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 24px;
+    text-align: center;
+    color: var(--gris);
+    font-size: 0.82rem;
+}

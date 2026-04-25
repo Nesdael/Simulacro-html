@@ -1,0 +1,50 @@
+@import url('root.css');
+
+.fechas{
+    padding: 80px 5%;
+    background: var(--negro);
+    text-align: center;
+}
+
+.fechas h2{
+    font-family: var(--fuente-titulo);
+    font-size: 2.2rem;
+    letter-spacing: 3px;
+    color: var(--dorado);
+    margin-bottom: 36px;
+}
+
+.fechas table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+.fechas thead tr{
+    background: var(--dorado);
+    color: var(--negro);
+}
+
+.fechas th, .fechas td{
+    padding: 14px 20px;
+    text-align: left;
+    border-radius: 1px solid rgba(255,255,255,0.07);
+}
+
+.fechas th{
+    font-family: var(--fuente-titulo);
+    letter-spacing: 2px;
+    font-size: 1rem;
+}
+
+.fechas tbody tr{
+    background: var(--azul-medio);
+}
+
+.fechas tbody tr:nth-child(odd){
+    background: rgba(18, 22, 64, 0.6); 
+}
+
+.fechas tbody tr:hover{
+    background: rgba(245,197,24, 0.08);
+}

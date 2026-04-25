@@ -1,6 +1,6 @@
 @import url('root.css');
 
-.barra-superior{
+.barra-superior {
     position: fixed;
     display: flex;
     top: 0;
@@ -10,50 +10,82 @@
     align-items: center;
     justify-content: space-between;
     padding: 12px 5px;
-    background: rgba(5,6,15,0.85);
+    background: rgba(5, 6, 15, 0.85);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(245, 197, 24, 0,2);
+    border: 1px solid rgba(245, 197, 24, 0.2);
 }
 
-.imagenlogo{
+.imagenlogo {
     height: 52px;
     width: auto;
     margin-left: 30px;
 }
 
-nav{
+nav ul {
     display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 28px;
-    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
 }
 
-nav a{
+nav ul li a {
     font-family: var(--fuente-titulo);
     font-size: 0.95rem;
     letter-spacing: 1.5px;
     color: var(--blanco);
     transition: color 0.2s;
-    text-decoration: none;
 }
 
-nav a:hover{
+nav ul li a:hover {
     color: var(--dorado);
     text-decoration: underline;
-}
+    } 
 
-.comprar-entradas{
+.comprar-entradas {
     background: var(--dorado);
-    color: var(--negro) ;
+    color: var(--negro);
     padding: 8px 18px;
     border-radius: 4px;
     font-family: var(--fuente-titulo);
     letter-spacing: 1.5px;
-    transition: background 0.2s, trasform 0.15s;
+    transition: background 0.2s, transform 0.15s;
 }
 
-.comprar-entradas:hover{
+.comprar-entradas:hover {
     color: var(--negro);
     background: var(--dorado-claro);
     transform: translateY(-1px);
+}
+
+.hamburguesa {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    margin-right: 16px;
+}
+
+.hamburguesa span {
+    display: block;
+    width: 26px;
+    height: 3px;
+    background: var(--dorado);
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+
+/* Animación X al abrir */
+.hamburguesa.activo span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburguesa.activo span:nth-child(2) {
+    opacity: 0;
+}
+.hamburguesa.activo span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
 }

@@ -1,0 +1,112 @@
+@media (max-width: 768px) {
+
+    .barra-superior {
+        flex-wrap: wrap;
+        padding: 14px 4%;
+        position: relative;
+    }
+
+    .hamburguesa {
+        display: flex;
+    }
+
+    #nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(5, 6, 15, 0.97);
+        padding: 20px;
+        border-bottom: 2px solid var(--dorado);
+    }
+
+    #nav-menu.activo {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .comprar-entradas {
+        white-space: nowrap;
+    }
+
+    #inicio {
+        padding-top: 130px;
+    }
+
+    .hero-section h1 {
+        font-size: 2.8rem;
+    }
+
+    .sobre {
+        flex-direction: column;
+        gap: 36px;
+    }
+
+    .fechas {
+        overflow-x: auto;
+    }
+
+    .zonas {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-marca {
+        grid-column: 1 / -1;
+    }
+
+    .footer-redes {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .barra-superior {
+        padding: 10px 3%;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .zonas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .galeria {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .galeria figure img {
+        height: 150px;
+    }
+
+    .fechas th, .fechas td {
+        padding: 8px;
+        font-size: 0.78rem;
+    }
+
+    .zonas article {
+        padding: 20px 12px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+}
