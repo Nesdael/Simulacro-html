@@ -1,0 +1,12 @@
+:root {
+  --negro: #05060f;
+  --azul-oscuro: #0b0e2a;
+  --azul-medio: #121640;
+  --dorado: #f5c518;
+  --dorado-claro: #ffe066;
+  --blanco: #ffffff;
+  --gris: #a0a4c0;
+  --radio: 10px;
+  --fuente-titulo: 'Bebas Neue', sans-serif;
+  --fuente-cuerpo: 'Noto Sans JP', sans-serif;
+}

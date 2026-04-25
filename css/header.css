@@ -1,0 +1,59 @@
+@import url('root.css');
+
+.barra-superior{
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 5px;
+    background: rgba(5,6,15,0.85);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(245, 197, 24, 0,2);
+}
+
+.imagenlogo{
+    height: 52px;
+    width: auto;
+    margin-left: 30px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+nav a{
+    font-family: var(--fuente-titulo);
+    font-size: 0.95rem;
+    letter-spacing: 1.5px;
+    color: var(--blanco);
+    transition: color 0.2s;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: var(--dorado);
+    text-decoration: underline;
+}
+
+.comprar-entradas{
+    background: var(--dorado);
+    color: var(--negro) ;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-family: var(--fuente-titulo);
+    letter-spacing: 1.5px;
+    transition: background 0.2s, trasform 0.15s;
+}
+
+.comprar-entradas:hover{
+    color: var(--negro);
+    background: var(--dorado-claro);
+    transform: translateY(-1px);
+}
